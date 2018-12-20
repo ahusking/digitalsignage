@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo enable ssh
+sudo update-rc.d ssh enable
 echo cleanup apps we dont need
 sudo apt-get remove --purge wolfram-engine scratch nuscratch sonic-pi idle3 smartsim java-common minecraft-pi python-minecraftpi python3-minecraftpi
 echo update apt repos
