@@ -5,11 +5,15 @@ sudo apt-get remove --purge wolfram-engine scratch nuscratch sonic-pi idle3 smar
 echo update apt repos
 sudo apt-get update
 echo install extra tools for signage
-sudo apt-get install -y xdotool unclutter chromium-browser
+sudo apt-get install -y xdotool unclutter chromium-browser screen
 echo make directories for autostart
 mkdir ~/.config/autostart
-echo download autostart config
-curl -o ~/.config/autostart/kiosk.desktop https://raw.githubusercontent.com/ahusking/digitalsignage/master/kiosk.desktop
+echo set chromium to be the default browser
+echo "export BROWSER=/usr/bin/chromium-browser" > ~./bashrc
+echo configure kiosk script to autostart
+echo "@bash /home/pi/kiosk.sh" > ~/.config/lxsession/LXDE-pi/autostart
+#echo download autostart config
+#curl -o ~/.config/autostart/kiosk.desktop https://raw.githubusercontent.com/ahusking/digitalsignage/master/kiosk.desktop
 echo download kiosk script
 curl -o ~/kiosk.sh https://raw.githubusercontent.com/ahusking/digitalsignage/master/kiosk.sh
 bash ~/kiosk.sh
