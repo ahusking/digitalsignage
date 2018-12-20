@@ -9,7 +9,7 @@ apt-get install xdotool unclutter chromium-browser
 echo make directories for autostart
 mkdir ~/.config/autostart
 echo download autostart config
-curl -o ~/.config/autostart https://raw.githubusercontent.com/ahusking/digitalsignage/master/kiosk.desktop
+curl -o ~/.config/autostart/kiosk.desktop https://raw.githubusercontent.com/ahusking/digitalsignage/master/kiosk.desktop
 echo download kiosk script
-curl -o ~/ https://raw.githubusercontent.com/ahusking/digitalsignage/master/kiosk.sh
+curl -o ~/kiosk.sh https://raw.githubusercontent.com/ahusking/digitalsignage/master/kiosk.sh
 bash ~/kiosk.sh
