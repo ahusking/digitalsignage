@@ -10,6 +10,7 @@ echo install extra tools for signage
 sudo apt-get install -y xdotool unclutter chromium-browser screen firefox-esr
 echo make directories for autostart
 mkdir ~/.config/autostart
+mkdir -p ~/.config/lxsession/LXDE-pi/
 echo set chromium to be the default browser
 echo "export BROWSER=/usr/bin/chromium-browser" > ~./bashrc
 echo configure kiosk script to autostart
