@@ -7,7 +7,7 @@ echo update apt repos
 sudo apt-get update
 echo install extra tools for signage
 # some reason it wouldn't accept -y using yes command to work around
-yes | sudo apt-get install -y xdotool unclutter chromium-browser screen
+yes | sudo apt-get install -y xdotool unclutter chromium-browser screen firefox-esr
 echo make directories for autostart
 mkdir ~/.config/autostart
 echo set chromium to be the default browser
