@@ -11,7 +11,7 @@ sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromi
 sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
 
 # Run Chromium and open tabs
-/usr/bin/chromium-browser --kiosk https://twitter.com/evoenergyact https://news.com.au &
+#/usr/bin/chromium-browser --kiosk https://twitter.com/evoenergyact https://news.com.au &
 
 #run firefox and open tabs
 /usr/bin/firefox-esr --kiosk https://twitter.com/evoenergyact https://news.com.au &
