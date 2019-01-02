@@ -13,6 +13,9 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium
 # Run Chromium and open tabs
 /usr/bin/chromium-browser --kiosk https://twitter.com/evoenergyact https://news.com.au &
 
+#run firefox and open tabs
+/usr/bin/firefox-esr --kiosk https://twitter.com/evoenergyact https://news.com.au &
+
 # Start the kiosk loop. This keystroke changes the Chromium tab
 # To have just anti-idle, use this line instead:
 # xdotool keydown ctrl; xdotool keyup ctrl;
